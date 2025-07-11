@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 
-const UserInput = ({onChange,userInput}) => {
-  
-
-
+const UserInput = ({ onChange, userInput }) => {
   return (
     <section id="user-input">
       <div className="input-group">
@@ -34,9 +31,7 @@ const UserInput = ({onChange,userInput}) => {
         <p>
           <label>Expected Return</label>
           <input
-            onChange={(event) =>
-              onChange("expectedReturn", event.target.value)
-            }
+            onChange={(event) => onChange("expectedReturn", event.target.value)}
             value={userInput.expectedReturn}
             type="text"
             required
